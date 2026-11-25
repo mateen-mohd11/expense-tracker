@@ -1,0 +1,193 @@
+/* ------------------------------------------------------------------ */
+/* Landing page — hero                                                 */
+/* ------------------------------------------------------------------ */
+
+.lp-hero {
+    background: #ffffff;
+    padding: 3.5rem 1.5rem 3.25rem;
+}
+
+.lp-hero-inner {
+    max-width: 660px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Badge */
+.lp-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #eaf6f1;
+    border: 1px solid #d5ece2;
+    color: #3f8f6f;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 2rem;
+}
+
+.lp-badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4ea886;
+}
+
+/* Heading */
+.lp-title {
+    font-family: var(--font-body);
+    font-size: 3.25rem;
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: #111111;
+    margin-bottom: 1.25rem;
+}
+
+.lp-title-accent { color: #4ea886; }
+
+/* Subtitle */
+.lp-subtitle {
+    max-width: 480px;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: #6b6b6b;
+    margin-bottom: 2.25rem;
+}
+
+/* Buttons */
+.lp-actions {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.lp-btn {
+    display: inline-block;
+    background: #0f0f0f;
+    color: #ffffff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    padding: 0.7rem 1.6rem;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+.lp-btn:hover { background: #2d2d2d; }
+
+/* Dashboard mock */
+.lp-dash {
+    width: 100%;
+    background: #f8f8f7;
+    border: 1px solid #efefed;
+    border-radius: 16px;
+    padding: 1.1rem 1.2rem 1.2rem;
+    text-align: left;
+}
+
+.lp-dash-dots {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 1rem;
+}
+
+.lp-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.lp-dot-red    { background: #e8888c; }
+.lp-dot-yellow { background: #edc56b; }
+.lp-dot-green  { background: #a6dcc8; }
+
+.lp-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.lp-stat {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #f0f0ee;
+    border-radius: 10px;
+    padding: 1rem 1.05rem;
+}
+
+.lp-stat-label {
+    font-size: 0.75rem;
+    color: #8a8a8a;
+    margin-bottom: 0.4rem;
+}
+
+.lp-stat-value {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111111;
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+}
+
+.lp-stat-note {
+    font-size: 0.75rem;
+    color: #a8a8a8;
+}
+
+.lp-note-up   { color: #d0595a; }
+.lp-note-good { color: #4ea886; }
+
+.lp-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.05rem;
+    background: #ffffff;
+    border: 1px solid #f0f0ee;
+    border-radius: 10px;
+    padding: 1.05rem 1rem 1.05rem 0;
+}
+
+.lp-bar-row {
+    display: flex;
+    align-items: center;
+}
+
+.lp-bar-label {
+    width: 75px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 0.8125rem;
+    color: #555555;
+}
+
+.lp-bar-track {
+    flex: 1;
+    height: 8px;
+    background: #f0f0ed;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.lp-bar {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.lp-bar-food   { background: #e6a83d; }
+.lp-bar-travel { background: #4a87d9; }
+.lp-bar-bills  { background: #8c7fd8; }
+
+/* Responsive */
+@media (max-width: 600px) {
+    .lp-title { font-size: 2.25rem; }
+    .lp-stats { grid-template-columns: 1fr; }
+}
