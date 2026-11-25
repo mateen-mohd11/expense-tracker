@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="auth-section">
+    <div class="auth-container" style="max-width: 760px;">
+        <div class="auth-header">
+            <h1 class="auth-title">Privacy Policy</h1>
+            <p class="auth-subtitle">Last updated: November 2026</p>
+        </div>
+
+        <div class="auth-card">
+            <h2 class="feature-title">1. Data We Collect</h2>
+            <p class="feature-body">
+                When you create a Spendly account, we collect your name, email address, and
+                a securely hashed version of your password. When you use the service, we
+                store the expense records you enter, including amounts, categories, dates,
+                and descriptions.
+            </p>
+
+            <h2 class="feature-title">2. How We Use Your Data</h2>
+            <p class="feature-body">
+                Your data is used only to provide and improve Spendly — for example, to sign
+                you in, display your expenses, and generate spending summaries and category
+                breakdowns. We do not sell your personal information or use your expense
+                data for advertising.
+            </p>
+
+            <h2 class="feature-title">3. Data Storage</h2>
+            <p class="feature-body">
+                Your account and expense data are stored in our application database. We
+                take reasonable measures to protect it from unauthorized access, and
+                passwords are never stored in plain text. You may request deletion of your
+                account at any time, after which your associated data will be removed.
+            </p>
+
+            <h2 class="feature-title">4. Third Party Services</h2>
+            <p class="feature-body">
+                Spendly loads web fonts from Google Fonts, which may receive basic technical
+                information such as your IP address when pages are displayed. We do not share
+                your account or expense data with third parties, except where required by law.
+            </p>
+
+            <h2 class="feature-title">5. Contact Us</h2>
+            <p class="feature-body">
+                If you have questions about this Privacy Policy or how your data is handled,
+                please contact us at support@spendly.example.
+            </p>
+        </div>
+
+        <p class="auth-switch">
+            <a href="{{ url_for('landing') }}">Back to home</a>
+        </p>
+    </div>
+</section>
+
+{% endblock %}
